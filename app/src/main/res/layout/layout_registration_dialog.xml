@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <EditText
+        android:id="@+id/et_register_email"
+        style="@style/EditTextAppearance"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_email"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_register_password"
+        style="@style/EditTextAppearance"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_password"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_register_password_confirm"
+        style="@style/EditTextAppearance"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_password"
+        android:hint="@string/confirmed_password"
+        android:inputType="textPassword" />
+
+</LinearLayout>

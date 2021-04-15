@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#50FFFFFF</color>
+    <color name="alcoholic">#B22222</color>
+    <color name="non_alcoholic">#008000</color>
+    <color name="optional_alcohol">#CCCC00</color>
+    <color name="favoured">#FF0050</color>
+    <color name="login">#09010d</color>
+    <color name="mtrl_textinput_default_box_stroke_color">@color/purple_700</color>
+</resources>

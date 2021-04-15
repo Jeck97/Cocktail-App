@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:id="@+id/layout_cocktail_lucky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_cocktail_image_lucky"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:contentDescription="@string/image_of_cocktail" />
+
+            <TextView
+                android:id="@+id/tv_cocktail_name_lucky"
+                style="@style/TextViewAppearance.Card.Lucky"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                tool:text="Cocktail Name" />
+
+            <TextView
+                android:id="@+id/tv_cocktail_category_lucky"
+                style="@style/TextViewAppearance.Card.Lucky"
+                tool:text="Category" />
+
+            <TextView
+                android:id="@+id/tv_cocktail_alcoholic_lucky"
+                style="@style/TextViewAppearance.Card.Lucky"
+                android:textStyle="italic"
+                tool:text="Alcoholic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_placeholder_lucky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tool:ignore="UseCompoundDrawables">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/iv_placeholder_lucky"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/cocktail_shaker_placeholder"
+                android:src="@drawable/cocktail_shaker" />
+
+            <TextView
+                android:id="@+id/tv_prompt_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/shake_your_lucky_cocktail" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_lucky_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/close"
+            android:src="@drawable/ic_close"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fab_lucky_retry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_lucky_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/retry"
+            android:src="@drawable/ic_retry"
+            android:visibility="gone"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fab_lucky_close"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

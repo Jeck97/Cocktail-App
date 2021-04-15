@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cocktail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/result_not_found"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:drawableTopCompat="@drawable/ic_no_drink"
+        tools:ignore="SmallSp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_placeholder"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/cocktail_shaker_placeholder"
+        android:src="@drawable/cocktail_shaker"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
